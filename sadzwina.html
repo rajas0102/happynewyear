@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Selamat Tahun Baru, Sadzwina!</title>
+    <title>Selamat Tahun Baru 2025</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #ff7f50, #ff6347);
-            color: #fff;
+            background: #2c3e50;
+            color: #ecf0f1;
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,103 +16,83 @@
             align-items: center;
             height: 100vh;
             text-align: center;
-            flex-direction: column;
-            overflow: hidden;
+            background-image: url('https://via.placeholder.com/1920x1080/1abc9c/ffffff?text=Tahun+Baru+2025');
+            background-size: cover;
+            background-position: center;
+            animation: fadeIn 2s ease-in-out;
         }
+        
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
         h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-            color: #fff;
-        }
-        .message {
-            font-size: 1.5em;
-            line-height: 1.8;
-            margin-bottom: 30px;
-            letter-spacing: 1px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-        }
-        .highlight {
+            font-size: 36px;
             color: #ffcc00;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #f39c12;
+        }
+
+        .highlight {
+            color: #e74c3c;
             font-weight: bold;
         }
+
         .footer {
-            font-size: 1.2em;
-            color: #ffebcd;
+            font-size: 18px;
+            color: #bdc3c7;
+            margin-top: 30px;
         }
-        .link {
-            font-size: 1.3em;
-            color: #fff;
+
+        .footer a {
+            color: #ffcc00;
             text-decoration: none;
-            font-weight: bold;
-            margin-top: 30px;
         }
-        .link:hover {
-            text-decoration: underline;
-        }
-        .love-image, .flower-image {
-            width: 150px;
-            margin-top: 30px;
-            animation: pulse 1.5s infinite ease-in-out;
-        }
-        @keyframes pulse {
+
+        @keyframes fadeIn {
             0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
+                opacity: 0;
             }
             100% {
-                transform: scale(1);
+                opacity: 1;
             }
         }
-        .floating-heart {
-            position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: float 5s infinite ease-in-out;
-        }
-        @keyframes float {
+
+        @keyframes slideIn {
             0% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
+                transform: translateY(-30px);
+                opacity: 0;
             }
             100% {
                 transform: translateY(0);
+                opacity: 1;
             }
         }
     </style>
 </head>
 <body>
 
-    <h1>HAPPY NEW YEAR 2025, Sadzwina!</h1>
-    
-    <div class="message">
-        <p>Aloww sacinkuu!<br><br>
-        Uda ga kerasa ya, uda ganti tahun aja. Makasii ya uda jadi bagian dari hidup aku di akhir tahun 2024. Kita uda sebulan lebii ya pacaran? Wakakakak.<br><br>
-        Semoga tahun ini kita bisa jadi lebih baik dari sebelumnya, ga berantem' lagii dan bisa saling ngerti satu sama lain (tahun ini stop bahas mantan yyy). Kangennn bangett aku sayangg, ak pengen bgt malem taun baruan di sana tapi didieu sibuk pisannn, keluarga ngajak jalan' bejir 🙁<br><br>
-        Sekali lagi, <span class="highlight">HAPPY NEW YEAR!</span></p>
+    <div class="container">
+        <h1>Selamat Tahun Baru 2025!</h1>
+        <p>Aloo Sacinkuu, Uda ga kerasa ya, uda ganti tahun aja. Makasii ya uda jadi bagian dari hidup aku di akhir tahun 2024. Kita uda sebulan lebii ya pacaran? Wakakakak.</p>
+        <p>Semoga tahun ini kita bisa jadi lebih baik dari sebelumnya, ga berantem' lagii dan bisa saling ngerti satu sama lain (tahun ini stop bahas <span class="highlight">mantan yyy</span>).</p>
+        <p>Kangennn bangett aku sayangg, ak pengen bgt malem taun baruan di sana tapi didieu sibuk pisannn, keluarga ngajak jalan' bejir 🙁</p>
+        <p><strong>SEKALI LAGI HAPPY NEW YEAR!</strong></p>
+        <div class="footer">
+            <p>❤️ Dari aku yang selalu sayang padamu</p>
+        </div>
     </div>
-
-    <!-- Gambar Love -->
-    <img src="https://www.pngall.com/wp-content/uploads/5/Heart-PNG-Image.png" alt="Love" class="love-image">
-    
-    <!-- Gambar Bunga -->
-    <img src="https://www.pngall.com/wp-content/uploads/5/Flower-PNG-Pic.png" alt="Flower" class="flower-image">
-
-    <div class="floating-heart">
-        <img src="https://www.pngall.com/wp-content/uploads/5/Heart-PNG-Image.png" alt="Floating Heart" width="50">
-    </div>
-
-    <p class="footer">Semoga kita makin bahagia dan makin dekat di tahun 2025 ini! <br> Love you always! 💖</p>
-
-    <a href="https://www.sadzwinacantik.com" class="link">Klik di sini untuk melihat pesan spesial lainnya!</a>
 
 </body>
 </html>
